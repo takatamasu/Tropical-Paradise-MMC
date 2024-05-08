@@ -29,6 +29,38 @@
 				max-height: 300px;
 			}
 		}
+
+		.offers {
+			&__option {
+				display: flex;
+				margin: 2em 0;
+				width: 100%;
+
+				&-img {
+					width: 50%;
+					height: auto;
+
+					&--right {
+						order: 1;
+					}
+				}
+
+				&-info {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+				}
+
+				&-heading {
+					margin-bottom: 0.5em;
+					font-size: 3.6rem;
+				}
+
+				&-btn {
+					padding: 1em;
+				}
+			}
+		}
 	}
 
 	@media (min-width: 768px) {
@@ -92,6 +124,12 @@
 		}
 	}
 
+	@media (max-width: 768px) {
+		.reviews.section-padding {
+			padding: 6em 0;
+		}
+	}
+
 	@media (min-width: 992px) {
 		.burger-btn {
 			top: 50px;
@@ -151,6 +189,21 @@
 			hr {
 				width: 60%;
 				max-width: 900px;
+			}
+		}
+
+		.offers {
+			background-image: $blue-gradient, url('../img/hero_palm_big.jpg');
+
+			&__option {
+				&-img {
+					object-fit: cover;
+					height: 300px;
+				}
+
+				&-text {
+					font-size: 1.5rem;
+				}
 			}
 		}
 	}

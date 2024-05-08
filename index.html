@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:wght@300&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -177,7 +178,7 @@
 
                     <div class="offers__option">
                         <img src="/img/card_beach_small.jpg" alt="Zdjęcie zachodu słońca nad morzem"
-                            class="offers__option-img offers_option-img--right">
+                            class="offers__option-img offers__option-img--right">
                         <div class="offers__option-info">
                             <h3 class="offers__option-heading">Podróż w pojedynkę</h3>
                             <p class="offers__option-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -206,11 +207,89 @@
             </div>
         </section>
 
+        <section class="reviews section-padding section white-section" id="reviews">
+            <h2 class="section-heading">Opinie</h2>
+            <div class="wrapper">
+                <div class="reviews__boxes">
+
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="/img/reviewer1.jpg" alt="Zdjęcie Anny Nowak">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"> <i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                                odit aut aperiam harum voluptatum error eligendi consequuntur laborum saepe natus.</p>
+                            <strong>Anna Nowak</strong>
+                        </div>
+                    </div>
+
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="/img/reviewer2.jpg" alt="Zdjęcie Jana Kowalskiego">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"> <i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                                odit aut aperiam harum voluptatum error eligendi consequuntur laborum saepe natus.</p>
+                            <strong>Jan Kowalski</strong>
+                        </div>
+                    </div>
+
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="/img/reviewer3.jpg" alt="Zdjęcie Marii Wiśniewskiej">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"> <i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                                odit aut aperiam harum voluptatum error eligendi consequuntur laborum saepe natus.</p>
+                            <strong>Maria Wiśniewska</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="contact section-padding section white-section">
+            <div class="white-block white-block-left"></div>
+            <div class="white-block white-block-right"></div>
+
+            <h2 class="section-heading">Kontakt</h2>
+
+            <div class="wrapper">
+
+                <form class="contact__form">
+
+                    <div class="contact__form-top">
+
+                        <label for="name" class="contact__form-label">Imię i nazwisko:</label>
+                        <input type="text" class="contact__form-input" id="name">
+
+                        <label for="email" class="contact__form-label">Adres e-mail:</label>
+                        <input type="text" id="email" class="contact__form-input">
+
+
+                    </div>
+
+                    <label for="msg" class="contact__form-label">Wiadomość:</label>
+                    <textarea id="msg" class="contact__form-textarea"></textarea>
+
+<button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button>
+
+
+                </form>
+            </div>
+        </section>
 
 
 
     </main>
-
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
     <script src="/js/script.js"></script>
 </body>
 
