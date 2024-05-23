@@ -130,6 +130,12 @@ body {
 	animation: navItemsAnimation 1s both;
 }
 
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: $dark;
+}
+
 // HEADER
 
 .header {
@@ -486,7 +492,7 @@ body {
 	}
 }
 
-// FOOTER 
+// FOOTER
 
 .footer {
 	color: $pure-white;
@@ -515,11 +521,11 @@ body {
 	}
 
 	&__box-link {
-		padding: 0 .3em;
+		padding: 0 0.3em;
 		font-size: 3.6rem;
 		color: $pure-white;
 		text-decoration: none;
-		transition: color .3s;
+		transition: color 0.3s;
 
 		&:first-child {
 			padding-left: 0;
